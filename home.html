@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gender Classification Using Fingerprint</title>
+    <link rel="stylesheet" href="C:\Users\SAI\Desktop\home.css"/>
+    <style>
+		*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+/* Reset some default browser styles */
+body, h1, h2,h4, p, form, button {
+    margin: 0;
+    padding: 0;
+}
+
+.home_container{
+    font-family: Arial, sans-serif;
+    /* background-color: rgb(242, 186, 194); */
+    background: url(https://actusdigital.com/wp-content/uploads/2021/06/Adwatch-min-1080x675.jpeg);
+    background-size: cover; /* Cover the entire viewport */
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat;
+    height:100vh;
+    /* color: #333; */
+}
+
+.header {
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+.header h1 {
+    margin-bottom: 30px;
+    color: rgb(236, 231, 231);
+}
+.header h4 {
+    margin-bottom: 10px;
+    color: rgb(236, 231, 231);
+}
+.form-container {
+    text-align: center;
+    margin-top: 100px;
+}
+
+input[type="file"] {
+    padding: 10px;
+    margin-bottom: 10px;
+    color: rgb(236, 231, 231);
+}
+.fileButton {
+    padding: 50px;
+    /* color: #007BFF; */
+    background-color: rgb(236, 231, 231);
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    text-align: center;
+    margin-right: 10px;
+    font-weight: bold;
+
+}
+.fileButton span{
+    background-color: rgb(18, 108, 205);
+    color: white;
+    padding: 8px;
+    border-radius: 3px;
+}
+.btn {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: rgb(236, 231, 231);
+    font-weight: bold;
+    color: rgb(18, 108, 205);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    padding: 13px 23px;
+    border-radius: 5px;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    margin-top: 20px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+.container{
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 100px;
+}
+.container i{
+    margin-top: 170px;
+    font-size: 40px;
+}
+.container h1{
+    text-align: center;
+}
+.container img{
+    width: 250px;
+    height: 300px;
+}
+.container span,h1{
+    color: rgb(16, 90, 168);
+}
+    </style>
+</head>
+<body class="home_container">
+    <div class="header">
+        <div class="form-container">
+    <h1>Gender Classification Using Fingerprint</h1>
+    <form action="/" method="POST" enctype="multipart/form-data">
+        <h4>Upload Your Finger Print Image here</h4>
+        <input type="file" class="fileButton" value="none" name="imagefile"><span>Upload Here</span></input><br>
+        <!-- <label for="fileInput" class="fileButton">Upload</label> -->
+        <button class="btn" type="submit">Submit</button>
+    </form>
+    </div>
+    </div>
+    {% if prediction %}
+        <h2>Predicted Gender:</h2>
+        <p>{{ prediction }}</p>
+        <h2>Uploaded Image:</h2>
+        <img src="{{path}}" alt="Uploaded Image">
+        <br>
+    {% endif %}
+
+
+</body>
+</html>
