@@ -2,7 +2,7 @@
 Gender Classification Using Fingerprint Images with Deep Learning <br><br>
 This project demonstrates a gender classification system based on fingerprint images using a Convolutional Neural Network (CNN). The model is trained using TensorFlow/Keras and deployed as a web application using Flask. Users can upload fingerprint images to classify them as "Male" or "Female" with real-time predictions. <br><br>
 
-Features <br>
+Features <br><br>
 Deep Learning Model: <br>
 
 Built with TensorFlow and Keras. <br>
