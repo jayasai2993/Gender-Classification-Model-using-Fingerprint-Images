@@ -1,4 +1,4 @@
-# Gender-Classification-Model-using-FingerprintImages-and-Deep-Learning [https://www.linkedin.com/posts/jayasai2993_python-tensorflow-keras-activity-7225736549051592704-uGFc?utm_source=share&utm_medium=member_desktop]
+# Gender-Classification-Model-using-FingerprintImages-and-Deep-Learning <br>[https://www.linkedin.com/posts/jayasai2993_python-tensorflow-keras-activity-7225736549051592704-uGFc?utm_source=share&utm_medium=member_desktop]
 Gender Classification Using Fingerprint Images with Deep Learning <br><br>
 This project demonstrates a gender classification system based on fingerprint images using a Convolutional Neural Network (CNN). The model is trained using TensorFlow/Keras and deployed as a web application using Flask. Users can upload fingerprint images to classify them as "Male" or "Female" with real-time predictions. <br><br>
 
